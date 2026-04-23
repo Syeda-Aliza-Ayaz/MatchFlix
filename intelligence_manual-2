@@ -1,0 +1,49 @@
+# Matchflix Intelligence Manual: Scoring & Archetypes
+
+This document outlines the psychological and mathematical logic used to calibrate users and determine cinematic compatibility.
+
+---
+
+## 1. User Categorization (Onboarding)
+When a user completes their "Neural Link" (Onboarding), they are assigned a **Neural Category** based on their primary dimension weights and MBTI archetype.
+
+### Categories:
+| Category | Primary Drivers | Personality Vibe |
+| :--- | :--- | :--- |
+| **Analytical** | Narrative Coherence, Thematic Depth | You dissect every frame for logic and meaning. |
+| **Visceral** | Emotional Impact, Audio Design | You value the "feeling" of the cinema above the logic. |
+| **Cinematographer** | Cinematography, Visual Tone | You are driven by the aesthetic and technical craft. |
+| **Philosopher** | Moral Conflict, Philosophical Tension | You prefer films that challenge your ethical boundaries. |
+
+---
+
+## 2. Match Scoring Algorithm
+The **Compatibility Score (%)** is a weighted average of the alignment between two users across all 8 dimensions.
+
+**Formula:**
+`Score = 100 - (Σ |UserA_dim - UserB_dim| / Max_Possible_Difference) * 100`
+
+### Conflict Warnings (Neural Friction):
+Friction is detected whenever a dimension delta exceeds **4.0 points**.
+- **Pacing Conflict**: One prefers slow-burn, the other prefers high-octane.
+- **Moral Friction**: One seeks ethical challenges, the other seeks comfort.
+- **Narrative Disconnect**: One accepts ambiguity, the other requires closure.
+
+---
+
+## 3. Compatibility Archetypes
+The "Archetype" (e.g., "The Visionaries") is determined by the **Overall Score** and the **Dimension Peaks**.
+
+| Score Range | Archetype Name | Description |
+| :--- | :--- | :--- |
+| **90% - 100%** | **The Soulmates** | Perfect alignment. You share a single cinematic soul. |
+| **80% - 89%** | **The Visionaries** | High alignment in vision and thematic depth. |
+| **60% - 79%** | **The Stabilizers** | Different tastes that complement and balance each other. |
+| **40% - 59%** | **The Paradox** | You agree on the technicals but clash on the emotions. |
+| **0% - 39%** | **The Antagonists** | Cinematic opposites. Your watch sessions will be battlefields. |
+
+---
+
+## 4. Shared Favorites & Recommendations
+- **Shared Favorites**: Returns movies that **both** users have rated 8.0 or higher in the database.
+- **Watch Together**: Finds movies with Dimension Scores that perfectly sit in the "sweet spot" between both users' preferences.
